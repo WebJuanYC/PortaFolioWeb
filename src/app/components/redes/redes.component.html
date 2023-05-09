@@ -1,0 +1,14 @@
+<ul class="list-group  list-group-horizontal" >
+  <div  *ngFor="let item of red">
+    <li class="list-group-item">
+      <a [href]='item.red' target="_blank">
+        <i [ngClass]="item.clase"></i></a></li>
+  </div>
+      
+      <!-- Button trigger modal -->
+      <li class="list-group-item">
+        <a routerLink="/login"><i class="fa-solid fa-user-lock fa-2xl" type="button">
+        </i>
+      </a>
+    </li>
+  </ul>

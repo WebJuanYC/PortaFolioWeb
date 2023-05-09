@@ -1,0 +1,48 @@
+<body class="banner">
+  <!--barra de navegacion-->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+     <a class="navbar-brand" href="/">
+     <img src="../../../../assets/img/APLogo-20-20.png" alt="" width="20%" height="">
+     </a>
+     <ul class="list-group list-group-horizontal">
+        <!-- Button que envia al login modal -->
+        <li class="list-group-item">
+          <a href="/login"><i (click)="cerrarSesion()" class="fa-solid fa-user fa-2xl" type="button"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+<div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-1">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+            <img src="../../../../assets/img/Juan1.jpg" class="rounded-circle w-100" alt="" title="">
+            <h3 class="fw-normal "><span class="text-secondary">Juan Ynoñan</span></h3>
+            <h6 class="fw-normal "><span class="text-secondary">Full Stack Developer Jr</span></h6>
+            <ul class="list-group mt-5">
+            <li class="list-group-item admin bg-dark"><a href="#" data-bs-toggle="modal" data-bs-target="#redModal" class="link"><i class="fa-solid fa-square-share-nodes fa-2xl"></i> Redes</a></li>
+            <app-modal-red></app-modal-red>
+            <li class="list-group-item admin bg-dark"><a href="#" data-bs-toggle="modal" data-bs-target="#personaModal" class="link"><i class="fa-solid fa-user fa-2xl"></i> Persona</a></li>
+            <app-modal-persona></app-modal-persona>
+            <li class="list-group-item admin bg-dark"><a href="#" data-bs-toggle="modal" data-bs-target="#experienciaModal" class="link"><i class="fa-solid fa-briefcase fa-2xl"></i> Experiencia</a></li>
+            <app-modal-experiencia></app-modal-experiencia>
+            <li class="list-group-item admin bg-dark"><a href="#" data-bs-toggle="modal" data-bs-target="#educacionModal" class="link"><i class="fa-solid fa-graduation-cap fa-2xl"></i> Educacion</a></li>
+            <app-modal-educacion></app-modal-educacion>
+            <li class="list-group-item admin bg-dark"><a href="#" data-bs-toggle="modal" data-bs-target="#habilidadModal" class="link"><i class="fa-solid fa-dumbbell fa-2xl"></i> Habilidad</a></li>
+            <app-modal-habilidad></app-modal-habilidad>
+            <li class="list-group-item admin bg-dark"><a href="#" data-bs-toggle="modal" data-bs-target="#proyectosModal" class="link"><i class="fa-solid fa-folder fa-2xl"></i> Proyectos</a></li>
+            <app-modal-proyectos></app-modal-proyectos>
+            <li class="list-group-item admin bg-dark"><a href="#" data-bs-toggle="modal" data-bs-target="#referenciasModal" class="link"><i class="fa-solid fa-comment fa-2xl"></i> Referencias</a></li>
+            <app-modal-referencias></app-modal-referencias>
+            <li class="list-group-item admin bg-dark"><a href="#" data-bs-toggle="modal" data-bs-target="#contactoModal" class="link"><i class="fa-solid fa-plus fa-2xl"></i>Contacto</a></li>
+            <app-modal-contacto></app-modal-contacto>
+            
+          </ul>
+        </div>
+        <div class="col-lg-8">
+        /div>
+     </div> 
+    </div>

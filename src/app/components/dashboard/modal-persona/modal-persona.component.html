@@ -1,0 +1,148 @@
+<!--inicio de persona Modal -->
+<div class="modal fade" id="personaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Persona</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form [formGroup]="form">
+      <div class="modal-body">
+        <section id="seccion-Persona">
+        <div class="container-fluid">
+        <div class="" *ngFor="let item of persona"class="row" >
+          <div class="col-2">
+          </div>
+          <div class="col-8">
+                <img [src]="item.foto_perfil" class="rounded-circle w-100" alt="..." title="...">
+                <h2>{{item.nombre}}{{item.apellido}}</h2>
+                <h6>{{item.frase}}</h6>
+                <p>{{item.acerca}}</p>
+          </div>
+              
+               <!--lapicito rojo que se cambia al tocarlo-->
+         <button type="button" class="btn btn-sm btn-outline-warning pl-1 pr-1 m-0" (click)="cargarDetalle(item.id)">Editar
+          <i class="fa-solid fa-pen"></i>
+        </button>
+        <!--Tachico de Basura que se hace fondo rojo al tocarlo-->
+        <button type="button" class="btn btn-sm btn-outline-danger pl-1 pr-1 m-0" (click)="borrar(item.id)">Eliminar
+          <i class="fa-solid fa-trash"></i>
+        </button>
+        </div>
+        </div>
+        </section>
+           
+                <!--esto es la validacion  renderizado condicional-->
+ <div class="input-group mb-3 bg-light" *ngIf="!!form.value.id">
+  <div class="input-group-prepend border-0">
+    <span class="input-group-text border-0" id="basic-addon1">ID:</span>
+  </div>
+  <input class="form-control outline-none border-0 bg-transparent" type="text" readonly formControlName="id">
+</div>
+        <!--colocar textos,imput,botones,formularios para este espacio-->
+        <div>
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" formControlName="nombre" placeholder="Ingrese Nombre"
+              [ngClass]="{'is-invalid': NombreInvalido, 'is-valid': NombreInvalido}">
+
+          <!-- Se verifica si cumple con el formato -->
+          <div *ngIf="Nombre?.errors && Nombre?.touched">
+              <p *ngIf="Nombre?.hasError('required')" class="errores">
+                  Campo requerido.
+              </p>
+              <p *ngIf="Nombre?.errors?.['minlength']" class="errores">
+                  Debe ser de 2 o más caracteres.
+              </p>
+          </div>
+      </div>
+
+      <div>
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="apellido" formControlName="apellido"placeholder="Ingrese Apellido " 
+            [ngClass]="{'is-invalid': ApellidoInvalido, 'is-valid': ApellidoValido}">
+
+        <!-- Se verifica si cumple con el formato -->
+        <div *ngIf="Apellido?.errors && Apellido?.touched">
+            <p *ngIf="Apellido?.hasError('required')" class="errores">
+                Campo requerido.
+            </p>
+            <p *ngIf="Apellido?.errors?.['minlength']" class="errores">
+                Debe ser de 2 o más caracteres.
+            </p>
+        </div>
+    </div>
+
+    
+      <div>
+        <label for="img_banner" class="form-label">Banner</label>
+        <input type="url" class="form-control" id="img_banner" formControlName="url_banner"  placeholder="Ingrese Imagen banner "
+            [ngClass]="{'is-invalid': Url_bannerInvalido, 'is-valid': Url_bannerValido}">
+
+             <!-- Se verifica si cumple con el formato -->
+             <div *ngIf="Url_banner?.errors && Url_banner?.touched">
+              <p *ngIf="Url_banner?.hasError('required')" class="errores">
+                  Campo requerido.
+              </p>
+          </div>
+      </div>
+
+    <div>
+      <label for="img_perfil" class="form-label">Imagen de Perfil</label>
+      <input type="text" class="form-control" id="img_perfil" formControlName="foto_perfil"  placeholder="Ingrese Foto de perfil"
+          [ngClass]="{'is-invalid': Foto_perfilInvalido, 'is-valid': Foto_perfilValido}">
+
+      <!-- Se verifica si cumple con el formato -->
+      <div *ngIf="Foto_perfil?.errors && Foto_perfil?.touched">
+          <p *ngIf="Foto_perfil?.hasError('required')" class="errores">
+              Campo requerido.
+          </p>
+      </div>
+  </div>
+
+  <div>
+    <label for="acerca" class="form-label">Acerca de mi</label>
+ <textarea type="text" class="form-control" id="acerca" formControlName="acerca"  rows="3" placeholder="Ingrese Descripcion"
+    [ngClass]="{'is-invalid': AcercaInvalido, 'is-valid': AcercaValido}"></textarea>
+       
+       <div *ngIf="Acerca?.errors && Acerca?.touched">
+        <p *ngIf="Acerca?.hasError('required')" class="errores">
+            Campo requerido.
+        </p>
+        <p *ngIf="Acerca?.errors?.['minlength']" class="errores">
+          Debe ser de 2 o más caracteres.
+      </p>
+    </div>
+    </div>
+
+    <div>
+      <label for="frase" class="form-label">Frase</label>
+      <input type="text" class="form-control" id="titulo" formControlName="frase"  placeholder="Ingrese Frase"
+          [ngClass]="{'is-invalid': FraseInvalido, 'is-valid': FraseValido}">
+
+      <!-- Se verifica si cumple con el formato -->
+      <div *ngIf="Frase?.errors && Frase?.touched">
+          <p *ngIf="Frase?.hasError('required')" class="errores">
+              Campo requerido.
+          </p>
+          <p *ngIf="Frase?.errors?.['minlength']" class="errores">
+              Debe ser de 2 o más caracteres.
+          </p>
+      </div>
+  </div>
+
+
+         
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal" (click)="form.reset">Reset</button> 
+      <button type="button" class="btn btn-primary" (click)="guardar()">Guardar</button> 
+      </div>
+      </div>     
+</form>
+</div>
+</div>
+</div> 
+  
+
+ 
+
+  <!--fin de persona modal-->

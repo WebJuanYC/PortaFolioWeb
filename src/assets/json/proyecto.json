@@ -1,0 +1,215 @@
+{
+  "persona": [
+    {
+      "id": 1,
+   "nombre": "Juan",
+    "apellido": "Ynoñan",
+    "url_banner": "./assets/img/pexels-photo1.jpg",
+    "foto_perfil": "../../assets/img/Juan1.jpg",
+    "acerca": "Profesional, responsable y eficiente. Tengo amplias habilidades en comunicacion oral y de trabajo en equipo, asi como tambien poseo una capacidad de aprendizaje veloz. Soy desarrollador de software con experiencia en aplicaciones web. Deseo formar parte de proyectos funcionales que superen las expectativas de los clientes de la empresa.",
+    "email": "juansho_car@hotmail.com",
+    "password": "usuario1",
+    "frase":  "Full Stack Developer Jr"
+  
+  
+}],
+
+    "experiencia": [
+          {
+           "id": 1,
+           "trabajo": ".Desarrollo Software SAC ",
+           "inicio": "2006-2007",
+           "puesto": "-Analista de Sistemas de la Información"
+         },
+
+         {
+            "id": 2,
+            "trabajo": ".Fario Construcciones S.A ",
+            "inicio": "2008-2020",
+            "puesto": "-Oficial Especializado"
+         },
+
+         {
+          "id": 3,
+          "trabajo": ".Escuela Lemos ",
+          "inicio": "Construcción de Buffet 2018",
+          "puesto": "-Montaje y armado con soldadura por arco y Mig-Mag en estructura metálica"
+         },
+
+         {
+          "id": 4,
+          "trabajo": ".Escuela Lemos ",
+          "inicio": "Electricista 2022",
+          "puesto": "-Montaje de red Eléctrica trifásica y monofásica y Montaje de tableros eléctricos"
+        
+         }],
+
+
+    "educacion": [
+         {
+          "id": 1,
+          "inicio": "(05-03-2022)",
+          "fin": "(10-12-2022)",
+          "nivel": ".Escuela Lemos 6506",
+          "estudio": "-Electricidad Domiciliario e Industrial"
+         },
+         {
+         "id": 2,
+            "inicio": "(2019)",
+            "fin": "(2020)",
+            "nivel": ".Escuela Lemos 6506",
+            "estudio": "-Gasista Matriculado"
+          },
+         {
+          "id": 3,
+            "inicio": "(2005)",
+            "fin": "(2007)",
+            "nivel": ".Instituto Trujillo (Trujillo-Perú)",
+            "estudio": "-Técnico en Computación e Informática"
+          },
+          {
+          "id": 4,
+            "inicio": "(2005)",
+            "fin": "(1994/1998)",
+            "nivel": ".I.E Jose Olaya Balandra N°80829)",
+            "estudio": "-Primaria Completa y Secundaria Completa"
+          },
+          {
+            "id": 5,
+            "inicio": "(15-03-2022)",
+            "fin": "(05-05-2022)",
+            "nivel": ".Argentina Programa #SeProgramar",
+            "estudio": "programación con objetos, fundamentos de la programación, JavaScript, Rubí."
+            
+        },
+        {  
+            "id": 6,
+            "inicio": "(28-06-2022)",
+            "fin": "(15-01-2023)",
+            "nivel": ".Segunda etapa #YoProgramo.Full Stack Developer jr ",
+            "estudio": "-Actualmente cursando"
+        }
+      ],
+
+    
+
+     "habilidad": [
+     {
+      "id": 1,
+      "habilidad": "HTML",
+      "porcentaje": "90",
+      "color": "bg-danger"
+    },
+    {
+      "id": 2,
+      "habilidad": "HABILIDADES",
+      "porcentaje": "75",
+      "color": "bg-warning"
+    },
+    {
+      "id": 3,
+      "habilidad": "CSS",
+      "porcentaje": "80",
+      "color": "bg-info"
+    },
+    {
+      "id": 4,
+      "habilidad": "BOOTSTRAP",
+      "porcentaje": "90",
+      "color": "bg-success"
+    },
+    {
+      "id": 5,
+      "habilidad": "JAVA/BACKEND",
+      "porcentaje": "40"
+    }
+                ],
+
+      "proyectos": [
+       {
+        "id": 1,
+        "trabajo": "Maquetado de proyecto CV en : HTML, CSS, BOOTSTRAP, FONTAWESOME. Utilizando ANGULAR, NETBEANS, MYSQL ,SPRING BOOT, JAVA. Deploy hecho en Firebase y Render",
+        "img": "../../assets/img/Computadora.png"
+       },
+       {
+        "id": 2,
+        "trabajo": "PortFolio Web Argentina Programa #Yo Programo",
+        "img": "../../assets/img/Proyecto.jpg"
+       },
+       {
+        "id": 3,
+        "trabajo": "Sistema de Ventas para una Bicicletería",
+        "img": "../../assets/img/Sistema.png"
+       }
+      ],
+
+       "referencias": [
+        {
+          "id": 1,
+          "nombre": "SERGIO",
+          "apellido": " MARTINEZ",
+           "cargo": "INGENIERO CIVIL",
+          "contacto": "CONTACTO: 2613632597"
+
+        },
+        {
+          "id": 2,
+          "nombre": "GABRIELA",
+          "apellido": " GARCIA DE LA MATA",
+           "cargo": "COORDINADORA GENERAL EN GOCODE",
+          "contacto": "CONTACTO: 895794587"
+
+        },
+        {
+          "id": 3,
+          "nombre": "MONICA",
+          "apellido": "MOREJON",
+          "cargo": "RESPONSABLE DE RRHH EN GOCODE",
+          "contacto": "CONTACTO: 89575456"
+        },
+        {
+          "id": 4,
+          "nombre": "ESCUELA",
+          "apellido": "LEMOS",
+          "cargo": "ESCUELA DE FORMACIÓN LABORAL",
+          "contacto": "CONTACTO: 2612704082"
+        }
+       ],  
+       
+       "redes": [
+        {
+          "id": 1,
+          "clase": "fa-brands fa-instagram fa-2xl",
+           "red": "https://www.instagram.com/juansho_car/"
+        },
+        {
+          "id": 2,
+          "clase": "fa-brands fa-linkedin fa-2xl",
+          "red": "https://www.linkedin.com/in/juan-yno%C3%B1an-905805247/"
+        },
+        
+        {
+          "id": 3,
+          "clase": "fa-brands fa-facebook fa-2xl",
+          "red": "https://www.facebook.com/juancarlos.ynonancajusol"
+        },
+        
+        {
+          "id": 4,
+          "clase": "fa-brands fa-github fa-2xl",
+          "red": "https://github.com/WebJuanYC"
+        }
+        
+       ],
+
+       "contacto": [
+        {
+          "id": 1,
+          "correo": "juansho_car@hotmail.com",
+           "telefono": "2613422334",
+           "img": "../../assets/img/QR.jpeg",
+           "frase": "Si queres ver mis datos de contacto,puedes escanear el codigo QR",
+           "titulo": "Datos de Contacto y mucho mas:"
+        }
+       ]
+      }

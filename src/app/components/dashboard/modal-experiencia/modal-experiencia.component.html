@@ -1,0 +1,152 @@
+<!--inicio de experiencia Modal -->
+<div class="modal fade" id="experienciaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Experiencia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form [formGroup]="form">
+   <div class="modal-body">
+    <section id="seccion-Esperiencia">
+        <div class="container-fluid">
+      <div *ngFor="let item of experiencia" class="row"> 
+          <div class="col-2">
+          </div>
+          <div class="col-8">
+             <h6>{{ item.trabajo}} {{item.inicio}}
+                {{ item.puesto}}</h6>
+          </div>
+             <!--lapicito rojo que se cambia al tocarlo-->
+         <button type="button" class="btn btn-sm btn-outline-warning pl-1 pr-1 m-0" (click)="cargarDetalle(item.id)">Editar
+          <i class="fa-solid fa-pen"></i>
+        </button>
+        <!--Tachico de Basura que se hace fondo rojo al tocarlo-->
+        <button type="button" class="btn btn-sm btn-outline-danger pl-1 pr-1 m-0" (click)="borrar(item.id)">Eliminar
+          <i class="fa-solid fa-trash"></i>
+        </button>
+          </div>
+      </div>
+    </section>
+
+    <!--esto es la validacion  renderizado condicional-->
+ <div class="input-group mb-3 bg-light" *ngIf="!!form.value.id">
+  <div class="input-group-prepend border-0">
+    <span class="input-group-text border-0" id="basic-addon1">ID:</span>
+  </div>
+  <input class="form-control outline-none border-0 bg-transparent" type="text" readonly formControlName="id">
+</div>
+      <!--colocar textos,imput,botones,formularios para este espacio-->
+        <div>
+          <label for="trabajo"><strong>Trabajo</strong></label>
+          <input type="text" name="" class="form-control" id="trabajo" formControlName="trabajo">
+          <input type="hidden" name="" id="id">
+        </div>
+
+        <div>
+          <label for="inicio"><strong>Inicio</strong></label>
+          <input type="text" name="" class="form-control" id="inicio" formControlName="inicio">
+        </div>
+
+        <div>
+          <label for="puesto"><strong>Puesto</strong></label>
+          <input type="text" name="" class="form-control" id="puesto" formControlName="puesto">
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+            formControlName="esEstudioActual">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Es Estudio Actual?</label>
+        </div>
+
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-secondary" (click)="form.reset()">Reset</button>
+              <button type="button" class="btn btn-primary" (click)="guardar()" >Guardar</button>
+            </div>
+        </div>
+  </form>
+</div>
+</div>
+</div>  
+
+
+   <!--fin de experiencia Modal -->      
+         
+        
+              
+                  
+             
+                 
+
+             
+              
+                    
+                  
+
+                  
+
+              
+                
+               
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--form name="experienciaForm"-->
+        <!--colocar textos,imput,botones,formularios para este espacio-->
+        <!--div class="mb-3 row">
+          <select class="form-select" id="experienciaModal">
+           <option selected>Seleccionar Experiencia</option>
+            <option value="1">ID1</option>
+            <option value="1">ID2</option>
+          </select>
+          <br>
+          
+          <label for="form-File-sm" class="form-label mt-3"> Agregar/Modificar Archivo</label>
+          <div class="col-sm-10">
+             <input class="form-control form-control-sm" id="formFile-sm" type="file">
+          </div>
+        </div>
+        <button type="button" class="btn btn-outline-success">Guardar</button>
+        <button type="button" class="btn btn-outline-danger">Eliminar</button>
+        <button type="button" class="btn btn-outline-warning">Actualizar</button>
+      <div class="mb-3 row">
+          <label for="exampleFormControlTextarea1" class="form-label">Texto</label>
+          <div class="col-sm-10">
+             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+       </div>
+          <button type="button" class="btn btn-outline-success">Guardar</button>
+        <button type="button" class="btn btn-outline-danger">Eliminar</button>
+        <button type="button" class="btn btn-outline-warning">Actualizar</button>
+        </form>
+      </div>
+     <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+  </div-->
+  <!--fin de experiencia modal-->

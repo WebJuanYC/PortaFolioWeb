@@ -1,0 +1,9 @@
+/*datos de contacto*/
+.img-thumbnail {
+    width: 11rem;
+
+}
+div.qr {
+    background-color: rgba(124, 123, 120, 0.7);
+    margin-top: 1rem;
+}

@@ -1,0 +1,12 @@
+<!-- datos de contacto-->
+<section>
+    <div class="container-fluid d-flex justify-content-center text-center qr pt-2 mb-0  ">
+<div   *ngFor="let item of contacto">
+    <h3 class="text-center pt-5 mb-5"><strong>{{item.titulo}}</strong></h3>
+    <h5>{{item.frase}}</h5>
+    <img [src]="item.img" class="img-thumbnail mb-5 pt-3" alt="QR" >
+    <h4>{{item.correo}}</h4>
+    <h4>{{item.telefono}}</h4>
+   </div>
+    </div>
+</section>

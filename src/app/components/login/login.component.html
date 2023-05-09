@@ -1,0 +1,55 @@
+<!--barra de navegacion-->
+<app-navbar></app-navbar>
+
+<!--formulario de login-->
+
+   <section class="login">
+    <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-8" >
+            <h2>Iniciar Sesion</h2>
+
+            <form [formGroup]="form" class="m-5" (ngSubmit)="onEnviar($event)" > 
+            <div class="mb-3">
+                   <label for="exampleInputEmail1" class="form-label">Email:</label>
+                  <input type="email"  formControlName="email"
+                  [ngClass]="{'is-invalid': Mail?.errors && Mail?.touched, 'is-valid': !Mail?.errors && Mail?.touched}"
+                  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   <!-- Gracias al getter que configuramos en el controlador -->
+    <div *ngIf="Mail?.errors && Mail?.touched">    
+      <p *ngIf="Mail?.hasError('required')" class="text-danger">
+          El email es requerido.
+      </p>
+      <p *ngIf="Mail?.hasError('email')" class="text-danger">
+          El formato del email debe ser válido.
+        </p>
+  </div>
+  </div>
+  <div class="mb-3">
+  <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+  <input type="password"  formControlName="password" 
+  [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
+    class="form-control" id="exampleInputPassword1">
+   <!-- Gracias al getter que configuramos en el controlador -->
+    <div *ngIf="Password?.errors  && Password?.touched">
+      <p *ngIf="Password?.hasError('required')" class="text-danger">
+        La contraseña es requerida.
+      </p>
+      <p *ngIf="Password?.hasError('minlength')" class="text-danger">
+         La contraseña debe ser de 8 o más caracteres.</p>
+    </div>
+  </div>
+  
+      <input type="submit" class="btn btn-primary" value="Iniciar Sesion">
+      <!--button type="submit" class="btn btn-primary" id="formulario-submit" class="main-button ">Iniciar sesión</button-->
+  </form>
+</div>
+<div class="col-lg-2">
+    </div>
+  </div>
+</div>
+</section>
+<!--footer-->
+<app-footer></app-footer>

@@ -1,0 +1,18 @@
+<!--referencias-->
+<section id="referencia">
+    <div class="container-fluid text-center" >
+       <h4><strong class="text-decoration-underline mt-3 mb-4"> REFERENCIAS </strong></h4>
+       
+       <div class="row align-items-start mb-4 mt-auto" >
+          
+          <div class="col" *ngFor="let item of referencia" >
+          
+          <h6><strong class="text-decoration-underline text-bg-black">{{item.nombre}} {{item.apellido}}</strong></h6>
+          <h6><span class="text-bg-black ">{{item.cargo}}</span></h6>
+          <h6><span class="text-bg-black">{{item.contacto}}</span></h6>
+          <p hidden>{{item.id}}</p>
+         </div>
+      </div>
+    </div>
+    </section>
+    

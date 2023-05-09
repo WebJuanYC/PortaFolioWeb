@@ -1,0 +1,147 @@
+.banner{
+   
+    background-image :[ngClass]="item.url_banner";
+  
+        margin-top: 7.5rem;
+      
+        background-size: 100%;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        background-size: cover;
+     }
+ body {
+     color: #3b4c54f2;
+ }
+     .text-center{
+       text-align: center!important;
+     }
+     
+     *, ::after, ::before {
+       box-sizing: border-box;
+   }
+ 
+   
+  
+  img.rounded-circle {
+    box-shadow: 8px 8px 8px 8px rgba(34, 29, 25, 0.308);
+     margin-top: 1rem;
+     
+     
+     
+  
+    
+     }
+ 
+     .w-100 {
+       width: 10rem!important;
+   }
+ 
+   
+ h5{
+    padding-left: 0px;
+    font-size: 1.2rem;
+    left: 2%;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+    margin-top: 0;
+    font-weight: 500;
+ }
+ 
+ 
+ 
+ h3{
+    line-height: 1.0;
+    font-size: calc(1.30rem + .6vw);
+    font-weight: bold;
+    
+  
+ }
+ 
+     .container {
+ 
+  margin: 0;
+ }
+ 
+ /* para celulares*/
+ [class*="col-"]{
+    float: left;
+    
+ }
+ 
+ /* para celulares*/
+ @media only screen and (max-width: 600px){
+ .col-xs-1 {width: 8.33%;} /* 100% / 12 columnas*/
+ .col-xs-2 {width: 16.66%;} /*  * 2 columnas*/
+ .col-xs-3 {width: 25%;} /*  *3 columnas*/
+ .col-xs-4 {width: 33.33%;} /* *4 columnas*/
+ .col-xs-5 {width: 41.66%;} /* *5 columnas*/
+ .col-xs-6 {width: 50%;} /* *6 columnas*/
+ .col-xs-7 {width: 58.33%;} /* *7 columnas*/
+ .col-xs-8 {width: 66.66%;} /* *8 columnas*/
+ .col-xs-9 {width: 75%;} /* *9 columnas*/
+ .col-xs-10 {width: 83.33%;} /* *10 columnas*/
+ .col-xs-11 {width: 91.66%;} /*  *11 columnas*/
+ .col-xs-12 {width: 100%;} /*  * 12 columnas*/
+ }
+ 
+ /* para tablet */
+ @media only screen and (max-width: 600px){
+    .col-s-1 {width: 8.33%;} /* 100% / 12 columnas*/
+    .col-s-2 {width: 16.66%;} /*  * 2 columnas*/
+    .col-s-3 {width: 25%;} /*  *3 columnas*/
+    .col-s-4 {width: 33.33%;} /* *4 columnas*/
+    .col-s-5 {width: 41.66%;} /* *5 columnas*/
+    .col-s-6 {width: 50%;} /* *6 columnas*/
+    .col-s-7 {width: 58.33%;} /* *7 columnas*/
+    .col-s-8 {width: 66.66%;} /* *8 columnas*/
+    .col-s-9 {width: 75%;} /* *9 columnas*/
+    .col-s-10 {width: 83.33%;} /* *10 columnas*/
+    .col-s-11 {width: 91.66%;} /*  *11 columnas*/
+    .col-s-12 {width: 100%;} /*  * 12 columnas*/
+ }
+ 
+ /* para pc */
+ @media only screen and (max-width: 768px){
+    .col-m-1 {width: 8.33%;} /* 100% / 12 columnas*/
+    .col-m-2 {width: 16.66%;} /*  * 2 columnas*/
+    .col-m-3 {width: 25%;} /*  *3 columnas*/
+    .col-m-4 {width: 33.33%;} /* *4 columnas*/
+    .col-m-5 {width: 41.66%;} /* *5 columnas*/
+    .col-m-6 {width: 50%;} /* *6 columnas*/
+    .col-m-7 {width: 58.33%;} /* *7 columnas*/
+    .col-m-8 {width: 66.66%;} /* *8 columnas*/
+    .col-m-9 {width: 75%;} /* *9 columnas*/
+    .col-m-10 {width: 83.33%;} /* *10 columnas*/
+    .col-m-11 {width: 91.66%;} /*  *11 columnas*/
+    .col-m-12 {width: 100%;} /*  * 12 columnas*/
+ }
+ 
+ @media only screen and (max-width: 992px){
+    .col-l-1 {width: 8.33%;} /* 100% / 12 columnas*/
+    .col-l-2 {width: 16.66%;} /*  * 2 columnas*/
+    .col-l-3 {width: 25%;} /*  *3 columnas*/
+    .col-l-4 {width: 33.33%;} /* *4 columnas*/
+    .col-l-5 {width: 41.66%;} /* *5 columnas*/
+    .col-l-6 {width: 50%;} /* *6 columnas*/
+    .col-l-7 {width: 58.33%;} /* *7 columnas*/
+    .col-l-8 {width: 66.66%;} /* *8 columnas*/
+    .col-l-9 {width: 75%;} /* *9 columnas*/
+    .col-l-10 {width: 83.33%;} /* *10 columnas*/
+    .col-l-11 {width: 91.66%;} /*  *11 columnas*/
+    .col-l-12 {width: 100%;} /*  * 12 columnas*/
+ }
+ 
+ @media only screen and (max-width: 1200px){
+    .col-xl-1 {width: 8.33%;} /* 100% / 12 columnas*/
+    .col-xl-2 {width: 16.66%;} /*  * 2 columnas*/
+    .col-xl-3 {width: 25%;} /*  *3 columnas*/
+    .col-xl-4 {width: 33.33%;} /* *4 columnas*/
+    .col-xl-5 {width: 41.66%;} /* *5 columnas*/
+    .col-xl-6 {width: 50%;} /* *6 columnas*/
+    .col-xl-7 {width: 58.33%;} /* *7 columnas*/
+    .col-xl-8 {width: 66.66%;} /* *8 columnas*/
+    .col-xl-9 {width: 75%;} /* *9 columnas*/
+    .col-xl-10 {width: 83.33%;} /* *10 columnas*/
+    .col-xl-11 {width: 91.66%;} /*  *11 columnas*/
+    .col-xl-12 {width: 100%;} /*  * 12 columnas*/
+ }

@@ -1,0 +1,18 @@
+.col-8 {
+    flex: 0 0 auto;
+    /* width: 66.66666667%; */
+}
+.row{
+    width: 100%;
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+
+.modal-content {
+    background-color: #d9ecfcf8;
+    }
+   
+    @media (max-width: 992px){
+   .modal 
+       --bs-modal{width: 500;}
+   }

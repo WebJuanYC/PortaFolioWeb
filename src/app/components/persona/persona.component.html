@@ -1,0 +1,19 @@
+<!--acerca de mi-->
+<section id="persona" class="">
+  <div class="container  mt-5">
+    <div class="row" *ngFor="let item of persona">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3"  >
+    <img [src]="item.foto_perfil" class=" rounded-circle w-100" alt="..." title="...">
+    <h3 class="fw-normal"><span class="text-secondary">{{item.nombre}} {{item.apellido}}</span></h3>
+    <h6 class="fw-normal"><span class="text-secondary">{{item.frase}}</span></h6>
+     </div>
+     <br>
+      <br>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 text-center">
+        <br>
+        <h2><span class="text-secondary"> Acerca de Mí </span></h2>
+        <h5><span class="text-secondary  text-center">{{item.acerca}}</span></h5>
+      </div>
+    </div>
+  </div>
+   </section>

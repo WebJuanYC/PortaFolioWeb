@@ -1,0 +1,14 @@
+.acordeon-Experiencia {
+    
+  background-position: 0% 25%;
+  ;
+  font-weight: 500;
+background-size: 70%
+
+}
+
+.acordeon-item {
+/*background-color: var(--bs-accordion-bg);
+border-width: var(--bs-bg-opacity) solid var();*/
+background-color: rgba(214, 212, 208,0.7)
+}

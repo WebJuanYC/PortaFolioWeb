@@ -1,0 +1,67 @@
+  <!--inicio de redes Modal-->
+            
+<div class="modal fade" id="redModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Redes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form [formGroup]="form">
+      <div class="modal-body">
+        <section id="seccion-Red">
+        <div class="container-fluid">
+      
+          <!--listado de redes-->
+          <div  *ngFor="let item of redes" class="row" list-group-item >
+            <div class="col-2">
+            </div>
+            
+            <div class="col-8">
+            <a [href]="item.red" target="_blank"><i [ngClass]="item.clase"></i></a>
+            </div>
+            
+            <!--lapicito rojo que se cambia al tocarlo-->
+         <button type="button" class="btn btn-sm btn-outline-warning pl-1 pr-1 m-0" (click)="cargarDetalle(item.id)">Editar
+          <i class="fa-solid fa-pen"></i>
+        </button>
+        <!--Tachico de Basura que se hace fondo rojo al tocarlo-->
+        <button type="button" class="btn btn-sm btn-outline-danger pl-1 pr-1 m-0" (click)="borrar(item.id)">Eliminar
+          <i class="fa-solid fa-trash"></i>
+        </button>
+          </div>
+      </div>
+        </section>
+        
+           <!--esto es la validacion  renderizado condicional-->
+ <div class="input-group mb-3 bg-light" *ngIf="!!form.value.id">
+  <div class="input-group-prepend border-0">
+    <span class="input-group-text border-0" id="basic-addon1">ID:</span>
+  </div>
+  <input class="form-control outline-none border-0 bg-transparent" type="text" readonly formControlName="id">
+</div>
+<!-- Clase de icono -->
+    <div >
+    <label for="clase"><strong>Icono Clase</strong></label>
+    <input type="text" class="form-control" id="clase"  formControlName="clase">
+    <input type="hidden" name="" id="id">
+  </div>
+<!-- URL de red -->
+    <div >
+    <label for="red"><strong>URL Red</strong></label>
+    <input type="text" class="form-control" name="" id="red"  formControlName="red">
+  </div>
+<!-- Botones de acción -->
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-secondary" (click)="form.reset()">Reset</button>
+    <button type="button" class="btn btn-primary" (click)="guardar()">Guardar</button>
+   </div>
+ </div>
+</form>
+</div>
+</div>
+</div>
+
+
+
+ <!--fin de redes modal-->

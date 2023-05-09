@@ -1,0 +1,19 @@
+.formulario-login {
+  margin-top: 20%;
+}
+.login {
+  margin-top: 15%;
+   height: 42vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size:cover;
+  
+}
+.error{
+  color:red
+}
+
+.border-green{
+  border-color: green;
+}

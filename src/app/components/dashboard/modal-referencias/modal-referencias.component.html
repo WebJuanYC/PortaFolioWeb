@@ -1,0 +1,68 @@
+<!--inicio de referencias Modal -->
+<div class="modal fade" id="referenciasModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Referencias</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form [formGroup]="form">
+      <div class="modal-body">
+        <section id="seccion-Referencias">
+        <div class="container-fluid" >
+        <div class="" *ngFor="let item of referencia" class="row">
+          <div class="col-2">
+          </div>
+          <div class="col-8">
+             <h4>{{item.nombre}} {{item.apellido}}</h4>
+             <h6>{{item.cargo}}</h6>
+             <h6>{{item.contacto}}</h6>
+             
+            </div>
+            <!--lapicito rojo que se cambia al tocarlo-->
+            <button type="button" class="btn btn-sm btn-outline-warning pl-1 pr-1 m-0" (click)="cargarDetalle(item.id)">Editar
+              <i class="fa-solid fa-pen"></i>
+            </button>
+            <!--Tachico de Basura que se hace fondo rojo al tocarlo-->
+            <button type="button" class="btn btn-sm btn-outline-danger pl-1 pr-1 m-0" (click)="borrar(item.id)">Eliminar
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div> 
+        </section>
+          <!--esto es la validacion  renderizado condicional-->
+ <div class="input-group mb-3 bg-light" *ngIf="!!form.value.id">
+  <div class="input-group-prepend border-0">
+    <span class="input-group-text border-0" id="basic-addon1">ID:</span>
+  </div>
+  <input class="form-control outline-none border-0 bg-transparent" type="text" readonly formControlName="id">
+</div>
+      <!--colocar textos,imput,botones,formularios para este espacio-->
+        <div>
+          <label for="nombre"><strong>Nombre</strong></label>
+          <input type="text" name="" class="form-control" id="trabajo" formControlName="nombre">
+          <input type="hidden" name="" id="id">
+        </div>
+        <div>
+          <label for="apellido"><strong>Apellido</strong></label>
+          <input type="text" name="" class="form-control" id="apellido" formControlName="apellido">
+        </div>
+        <div>
+          <label for="cargo"><strong>Cargo</strong></label>
+          <input type="text" name="" class="form-control" id="cargo" formControlName="cargo">
+        </div>
+        <div>
+          <label for="contacto"><strong>Contacto</strong></label>
+          <input type="text" name="" class="form-control" id="contacto" formControlName="contacto">
+        </div>
+        <!-- Botones de acción -->
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal" (click)="form.reset">Reset</button> 
+        <button type="button" class="btn btn-primary" (click)="guardar()">Guardar</button> 
+        </div>
+</div>
+</form>
+</div>
+</div>
+</div>  
+  <!--fin de referencias modal-->

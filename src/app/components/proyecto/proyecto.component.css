@@ -1,0 +1,28 @@
+.text-center {
+    text-align: center!important;
+}
+
+#proyecto{
+  margin:20px;
+  background-color: rgba(253, 252, 250, 0.7);
+  margin-top: 2rem;
+  vertical-align:middle;
+}
+
+.img-fluid{
+padding: 20px;
+}
+
+.row{
+  padding: 15px;
+}
+h5{
+  padding-left: 0px;
+  font-size: 1.2rem;
+  left: 2%;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  margin-top: 0;
+  font-weight: 500;
+  
+}
