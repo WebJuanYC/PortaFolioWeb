@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PersonaService {
   
-  url= 'http://localhost:8080/persona';
+  url= 'https://backendweb-bozo.onrender.com/persona';
   http: any;
 
 

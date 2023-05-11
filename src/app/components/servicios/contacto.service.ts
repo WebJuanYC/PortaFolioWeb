@@ -9,7 +9,7 @@ import { Contacto } from '../entidades/contacto';
 export class ContactoService {
  
 
-  url= 'http://localhost:8080/contacto';
+  url= 'https://backendweb-bozo.onrender.com/contacto';
   http: any;
 
   constructor(private httpClient:HttpClient) { }

@@ -9,7 +9,7 @@ import { Habilidad } from '../entidades/habilidad';
 })
 export class HabilidadService {
   
-  url= 'http://localhost:8080/habilidad';
+  url= 'https://backendweb-bozo.onrender.com/habilidad';
   http: any;
 
   constructor(private httpClient:HttpClient) { }

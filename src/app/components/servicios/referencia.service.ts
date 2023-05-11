@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class ReferenciaService {
 
 
-  url= 'http://localhost:8080/referencia';
+  url= 'https://backendweb-bozo.onrender.com/referencia';
   http: any;
 
 

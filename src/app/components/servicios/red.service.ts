@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class RedService {
   
-  url= 'http://localhost:8080/red';
+  url= 'https://backendweb-bozo.onrender.com/red';
   http: any;
 
   constructor(private httpClient:HttpClient) { }

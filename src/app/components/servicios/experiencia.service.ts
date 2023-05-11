@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ExperienciaService {
 
-  url = 'http://localhost:8080/experiencia';
+  url = 'https://backendweb-bozo.onrender.com/experiencia';
   http: any;
 
 

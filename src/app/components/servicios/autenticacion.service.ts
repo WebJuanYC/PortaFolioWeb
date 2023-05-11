@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable, map} from 'rxjs';
   providedIn: 'root'
 })
 export class AutenticacionService {
-  url = 'http://localhost:8080/login';
+  url = 'https://backendweb-bozo.onrender.com/login';
   
   
   currentUserSubjet: BehaviorSubject<any>;
