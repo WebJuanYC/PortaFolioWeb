@@ -121,7 +121,8 @@
     {
       "id": 5,
       "habilidad": "JAVA/BACKEND",
-      "porcentaje": "40"
+      "porcentaje": "40",
+      "color": "bg-danger"
     }
                 ],
 
